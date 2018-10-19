@@ -1,0 +1,187 @@
+-*-
+Tempo de escalonamento300'
+ Chegada de fregues em 7'
+-*-
+
+Evento 1 > Chegada de fregues aos 7'
+Evento 2 > atendimento da barbearia iniciado em 7'
+atendimento da barbearia encerrado em 3'
+Proximo fregues em 15'
+Barbearia ocupada em 7'
+Tamanho da fila em 7'0
+-*-
+Evento 3 > atendimento da barbearia encerrado em 10'
+Barbearia livre em 10'
+Tamanho da fila em 10'0
+-*-
+Evento 1 > Chegada de fregues aos 22'
+Evento 2 > atendimento da barbearia iniciado em 22'
+atendimento da barbearia encerrado em 11'
+Proximo fregues em 23'
+Barbearia ocupada em 22'
+Tamanho da fila em 22'0
+-*-
+Evento 3 > atendimento da barbearia encerrado em 33'
+Barbearia livre em 33'
+Tamanho da fila em 33'0
+-*-
+Evento 1 > Chegada de fregues aos 45'
+Evento 2 > atendimento da barbearia iniciado em 45'
+atendimento da barbearia encerrado em 19'
+Proximo fregues em 31'
+Barbearia ocupada em 45'
+Tamanho da fila em 45'0
+-*-
+Evento 3 > atendimento da barbearia encerrado em 64'
+Barbearia livre em 64'
+Tamanho da fila em 64'0
+-*-
+Evento 1 > Chegada de fregues aos 76'
+Evento 2 > atendimento da barbearia iniciado em 76'
+atendimento da barbearia encerrado em 27'
+Proximo fregues em 7'
+Barbearia ocupada em 76'
+Tamanho da fila em 76'0
+-*-
+Evento 1 > Chegada de fregues aos 83'
+Proximo fregues em 3'
+Barbearia ocupada em 83'
+Tamanho da fila em 83'1
+-*-
+Evento 1 > Chegada de fregues aos 86'
+Proximo fregues em 15'
+Barbearia ocupada em 86'
+Tamanho da fila em 86'2
+-*-
+Evento 1 > Chegada de fregues aos 101'
+Proximo fregues em 11'
+Barbearia ocupada em 101'
+Tamanho da fila em 101'3
+-*-
+Evento 3 > atendimento da barbearia encerrado em 103'
+Evento 2 > atendimento da barbearia iniciado em 103'
+atendimento da barbearia  encerrado em 23'
+Barbearia ocupada em 103'
+Tamanho da fila em 103'2
+-*-
+Evento 1 > Chegada de fregues aos 112'
+Proximo fregues em 19'
+Barbearia ocupada em 112'
+Tamanho da fila em 112'3
+-*-
+Evento 3 > atendimento da barbearia encerrado em 126'
+Evento 2 > atendimento da barbearia iniciado em 126'
+atendimento da barbearia  encerrado em 31'
+Barbearia ocupada em 126'
+Tamanho da fila em 126'2
+-*-
+Evento 1 > Chegada de fregues aos 131'
+Proximo fregues em 27'
+Barbearia ocupada em 131'
+Tamanho da fila em 131'3
+-*-
+Evento 3 > atendimento da barbearia encerrado em 157'
+Evento 2 > atendimento da barbearia iniciado em 157'
+atendimento da barbearia  encerrado em 7'
+Barbearia ocupada em 157'
+Tamanho da fila em 157'2
+-*-
+Evento 1 > Chegada de fregues aos 158'
+Proximo fregues em 3'
+Barbearia ocupada em 158'
+Tamanho da fila em 158'3
+-*-
+Evento 1 > Chegada de fregues aos 161'
+Proximo fregues em 15'
+Barbearia ocupada em 161'
+Tamanho da fila em 161'4
+-*-
+Evento 3 > atendimento da barbearia encerrado em 164'
+Evento 2 > atendimento da barbearia iniciado em 164'
+atendimento da barbearia  encerrado em 11'
+Barbearia ocupada em 164'
+Tamanho da fila em 164'3
+-*-
+Evento 3 > atendimento da barbearia encerrado em 175'
+Evento 2 > atendimento da barbearia iniciado em 175'
+atendimento da barbearia  encerrado em 23'
+Barbearia ocupada em 175'
+Tamanho da fila em 175'2
+-*-
+Evento 1 > Chegada de fregues aos 176'
+Proximo fregues em 19'
+Barbearia ocupada em 176'
+Tamanho da fila em 176'3
+-*-
+Evento 1 > Chegada de fregues aos 195'
+Proximo fregues em 31'
+Barbearia ocupada em 195'
+Tamanho da fila em 195'4
+-*-
+Evento 3 > atendimento da barbearia encerrado em 198'
+Evento 2 > atendimento da barbearia iniciado em 198'
+atendimento da barbearia  encerrado em 27'
+Barbearia ocupada em 198'
+Tamanho da fila em 198'3
+-*-
+Evento 3 > atendimento da barbearia encerrado em 225'
+Evento 2 > atendimento da barbearia iniciado em 225'
+atendimento da barbearia  encerrado em 7'
+Barbearia ocupada em 225'
+Tamanho da fila em 225'2
+-*-
+Evento 1 > Chegada de fregues aos 226'
+Proximo fregues em 3'
+Barbearia ocupada em 226'
+Tamanho da fila em 226'3
+-*-
+Evento 1 > Chegada de fregues aos 229'
+Proximo fregues em 15'
+Barbearia ocupada em 229'
+Tamanho da fila em 229'4
+-*-
+Evento 3 > atendimento da barbearia encerrado em 232'
+Evento 2 > atendimento da barbearia iniciado em 232'
+atendimento da barbearia  encerrado em 11'
+Barbearia ocupada em 232'
+Tamanho da fila em 232'3
+-*-
+Evento 3 > atendimento da barbearia encerrado em 243'
+Evento 2 > atendimento da barbearia iniciado em 243'
+atendimento da barbearia  encerrado em 23'
+Barbearia ocupada em 243'
+Tamanho da fila em 243'2
+-*-
+Evento 1 > Chegada de fregues aos 244'
+Proximo fregues em 19'
+Barbearia ocupada em 244'
+Tamanho da fila em 244'3
+-*-
+Evento 1 > Chegada de fregues aos 263'
+Proximo fregues em 31'
+Barbearia ocupada em 263'
+Tamanho da fila em 263'4
+-*-
+Evento 3 > atendimento da barbearia encerrado em 266'
+Evento 2 > atendimento da barbearia iniciado em 266'
+atendimento da barbearia  encerrado em 7'
+Barbearia ocupada em 266'
+Tamanho da fila em 266'3
+-*-
+Evento 3 > atendimento da barbearia encerrado em 273'
+Evento 2 > atendimento da barbearia iniciado em 273'
+atendimento da barbearia  encerrado em 9'
+Barbearia ocupada em 273'
+Tamanho da fila em 273'2
+-*-
+Evento 3 > atendimento da barbearia encerrado em 282'
+Evento 2 > atendimento da barbearia iniciado em 282'
+atendimento da barbearia  encerrado em 21'
+Barbearia ocupada em 282'
+Tamanho da fila em 282'1
+-*-
+Evento 1 > Chegada de fregues aos 294'
+Proximo fregues em 27'
+Barbearia ocupada em 294'
+Tamanho da fila em 294'2
+-*-
