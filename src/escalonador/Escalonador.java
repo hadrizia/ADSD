@@ -6,14 +6,21 @@ import java.util.List;
 public class Escalonador extends Thread {
 
 	private GeradorNumerosAleatorios gerador;
-	private List<Integer> numerosAleatorios;
+	private List<Integer> numerosAleatoriosFila1;
+	private List<Integer> numerosAleatoriosFila2;
 	private int tempo;
-	private int chegada;
-	private int saida;
-	private int filaChegada;
+	private int chegada1;
+	private int chegada2;
+	private int saida1;
+	private int saida2;
+	private int fila1;
+	private int fila2;
 	private int a;
-	private int m;
-	private int indice;
+	private int mod1;
+	private int mod2;
+	private int c;
+	private int indice1;
+	private int indice2;
 	private boolean servico;
 	private PrintWriter writer;
 
@@ -23,16 +30,25 @@ public class Escalonador extends Thread {
 	 */
 	public Escalonador(int tempo) {
 		this.tempo = tempo;
-		this.chegada = 0;
-		this.saida = 0;
-		this.filaChegada = 0;
+		this.chegada1 = 0;
+		this.chegada2 = 0;
+		this.saida1 = 0;
+		this.saida2 = 0;
+		this.fila1 = 0;
+		this.fila2 = 0;
 		this.servico = false;
 		this.gerador = new GeradorNumerosAleatorios(7);
-		this.a = 5;
-		this.m = 32;
-		this.numerosAleatorios = gerador.metodoMultiplicativo(a, m);
-		this.indice = 0;
-		this.escalonaChegada(0);
+		this.a = 1;
+		this.c = 3;
+		this.mod1 = 10;
+		this.mod2 = 5;
+		this.numerosAleatoriosFila1 = gerador.metodoMisto(a, c, mod1);
+		this.numerosAleatoriosFila2 = gerador.metodoMisto(a, c, mod2);
+		this.indice1 = 0;
+		this.indice2 = 0;
+		
+		this.escalonaChegadaFila1(0);
+		this.escalonaChegadaFila2(0);
 
 		try {
 			writer = new PrintWriter("saida/escalonador", "UTF-8");
@@ -41,8 +57,7 @@ public class Escalonador extends Thread {
 		}
 
 		writer.println("-*-");
-		writer.println("Tempo de escalonamento" + this.tempo + "'");
-		writer.println(" Chegada de fregues em " + this.chegada + "'");
+		writer.println("Tempo de escalonamento: " + this.tempo + "'");
 		writer.println("-*-");
 		writer.println();
 	}
@@ -54,7 +69,8 @@ public class Escalonador extends Thread {
 			try {
 				this.sleep(1);
 				segundos++;
-				checaEventosCriados(segundos);
+				checaEventosCriadosFila1(segundos);
+				checaEventosCriadosFila2(segundos);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -63,69 +79,137 @@ public class Escalonador extends Thread {
 	}
 	
 	
-	public void checaEventosCriados(int segundos) {
+	public void checaEventosCriadosFila1(int segundos) {
 		boolean houveAlteracao = false;
-		if (segundos == chegada) {
+		if (segundos == chegada1) {
 			houveAlteracao = true;
-			writer.println("Evento 1 > Chegada de fregues aos " + segundos + "'");
+			writer.println("FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos " + segundos + "'");
 			if (!this.servico) {
-				escalonaSaida(segundos);
+				escalonaSaidaFila1(segundos);
 				this.servico = true;
-				writer.println("Evento 2 > atendimento da barbearia iniciado em "	+ segundos + "'");
-				writer.println("atendimento da barbearia encerrado em " + (this.saida - segundos)	+ "'");
+				writer.println("FILA 1 Evento 2 > atendimento do Sistema iniciado em "	+ segundos + "'");
+				writer.println("FILA 1 atendimento do Sistema encerrado em " + (this.saida1 - segundos)	+ "'");
 			} else {
-				this.filaChegada++;
+				this.fila1++;
+				writer.println("FILA 1 Evento 4 > esperando atendimento");
+				writer.println("FILA 1 Tamanho da fila 1 em " + segundos + "'" + this.fila1);
 			}
-			escalonaChegada(segundos);
-			writer.println("Proximo fregues em " + (this.chegada - segundos) + "'");
+			escalonaChegadaFila1(segundos);
+			writer.println("FILA 1 Proximo fregues em " + (this.chegada1 - segundos) + "'");
 		}
 
-		if (segundos == this.saida) {
+		if (segundos == this.saida1) {
 			houveAlteracao = true;
-			writer.println("Evento 3 > atendimento da barbearia encerrado em " + segundos + "'");
-			if (this.filaChegada != 0) {
-				this.filaChegada--;
-				this.escalonaSaida(segundos);
+			writer.println("FILA 1 Evento 3 > atendimento do Sistema encerrado em " + segundos + "'");
+			if (this.fila1 != 0) {
+				this.fila1--;
+				this.escalonaSaidaFila1(segundos);
 				this.servico = true;
-				writer.println("Evento 2 > atendimento da barbearia iniciado em "	+ segundos + "'");
-				writer.println("atendimento da barbearia  encerrado em " + (saida - segundos)	+ "'");
+				writer.println("FILA 1 Evento 2 > atendimento do Sistema iniciado em "	+ segundos + "'");
+				writer.println("FILA 1 atendimento do Sistema  encerrado em " + (saida1 - segundos)	+ "'");
 			} else {
 				this.servico = false;
 			}
 		}
 		if (houveAlteracao) {
 			if (this.servico) {
-				writer.println("Barbearia ocupada em " + segundos + "'");
+				writer.println("FILA 1 Sistema ocupada em " + segundos + "'");
 			} else {
-				writer.println("Barbearia livre em " + segundos + "'");
+				writer.println("FILA 1 Sistema livre em " + segundos + "'");
 			}
-			writer.println("Tamanho da fila em " + segundos + "'" + filaChegada);
+			writer.println("FILA 1 Tamanho da fila 1 em " + segundos + "'" + this.fila1);
+			writer.println("-*-");
+		}
+	}
+	
+	public void checaEventosCriadosFila2(int segundos) {
+		boolean houveAlteracao = false;
+		if (segundos == chegada2) {
+			houveAlteracao = true;
+			writer.println("FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos " + segundos + "'");
+			if (!this.servico && this.fila1 == 0) {
+				escalonaSaidaFila2(segundos);
+				this.servico = true;
+				writer.println("FILA 2 Evento 2 > atendimento do Sistema iniciado em "	+ segundos + "'");
+				writer.println("FILA 2 atendimento do Sistema encerrado em " + (this.saida2 - segundos)	+ "'");
+			} else {
+				this.fila2++;
+				writer.println("FILA 2 Evento 4 > esperando atendimento");
+				writer.println("FILA 2 Tamanho da fila 2 em " + segundos + "'" + this.fila2);
+			}
+			escalonaChegadaFila2(segundos);
+			writer.println("FILA 2 Proximo fregues em " + (this.chegada2 - segundos) + "'");
+		}
+
+		if (segundos == this.saida2) {
+			houveAlteracao = true;
+			writer.println("FILA 2 Evento 3 > atendimento do Sistema encerrado em " + segundos + "'");
+			if (this.fila2 != 0 && this.fila1 == 0) {
+				this.fila2--;
+				this.escalonaSaidaFila2(segundos);
+				this.servico = true;
+				writer.println("FILA 2 Evento 2 > atendimento do Sistema iniciado em "	+ segundos + "'");
+				writer.println("FILA 2 atendimento do Sistema  encerrado em " + (saida2 - segundos)	+ "'");
+			} else {
+				this.servico = false;
+				
+			}
+		}
+		if (houveAlteracao) {
+			if (this.servico && this.fila2 != 0 && fila1 != 0) {
+				writer.println("FILA 2 Sistema ocupada em " + segundos + "'");
+			} else {
+				writer.println("FILA 2 Sistema livre em " + segundos + "'");
+			}
+			writer.println("FILA 2 Tamanho da fila 2 em " + segundos + "'" + this.fila2);
 			writer.println("-*-");
 		}
 	}
 	
 
-	public void geraNumerosAleatorios(){
-		if (indice == (numerosAleatorios.size()-1)){
+	public void geraNumerosAleatoriosFila1(){
+		if (indice1 == (numerosAleatoriosFila1.size()-1)){
 			this.a++;
-			this.m++;
-			this.numerosAleatorios = gerador.metodoMultiplicativo(a, m);
-			this.indice = 0;
+			this.mod1++;
+			this.numerosAleatoriosFila1 = gerador.metodoMisto(a, c, mod1);
+			this.indice1 = 0;
+		}
+	}
+	
+	public void geraNumerosAleatoriosFila2(){
+		if (indice2 == (numerosAleatoriosFila2.size()-1)){
+			this.a++;
+			this.mod2++;
+			this.numerosAleatoriosFila2 = gerador.metodoMisto(a, c, mod2);
+			this.indice2 = 0;
 		}
 	}
 	
 	
-	public void escalonaChegada(int segundos) {
-		this.geraNumerosAleatorios();
-		this.chegada = segundos + numerosAleatorios.get(indice);
-		this.indice++;
+	public void escalonaChegadaFila1(int segundos) {
+		this.geraNumerosAleatoriosFila1();
+		this.chegada1 = segundos + numerosAleatoriosFila1.get(indice1);
+		this.indice1++;
 	}
-
 	
-	public void escalonaSaida(int segundos) {
-		this.geraNumerosAleatorios();
-		this.saida = segundos + numerosAleatorios.get(indice);
-		this.indice++;
+
+	public void escalonaChegadaFila2(int segundos) {
+		this.geraNumerosAleatoriosFila2();
+		this.chegada2 = segundos + numerosAleatoriosFila2.get(indice2);
+		this.indice2++;
+	}
+	
+	
+	public void escalonaSaidaFila1(int segundos) {
+		this.geraNumerosAleatoriosFila1();
+		this.saida1 = segundos + numerosAleatoriosFila1.get(indice1);
+		this.indice1++;
+	}
+	
+	public void escalonaSaidaFila2(int segundos) {
+		this.geraNumerosAleatoriosFila2();
+		this.saida2 = segundos + numerosAleatoriosFila2.get(indice2) + numerosAleatoriosFila1.get(indice1);
+		this.indice2++;
 	}
 
 	public static void main(String[] args) {

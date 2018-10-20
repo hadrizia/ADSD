@@ -1,187 +1,294 @@
 -*-
 Tempo de escalonamento300'
- Chegada de fregues em 7'
 -*-
 
-Evento 1 > Chegada de fregues aos 7'
-Evento 2 > atendimento da barbearia iniciado em 7'
-atendimento da barbearia encerrado em 3'
-Proximo fregues em 15'
-Barbearia ocupada em 7'
-Tamanho da fila em 7'0
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 7'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 7'
+FILA 1 atendimento do Sistema encerrado em 0'
+FILA 1 Proximo fregues em 3'
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 7'
+FILA 1 Sistema livre em 7'
+FILA 1 Tamanho da fila 1 em 7'0
 -*-
-Evento 3 > atendimento da barbearia encerrado em 10'
-Barbearia livre em 10'
-Tamanho da fila em 10'0
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 7'
+FILA 2 Evento 2 > atendimento do Sistema iniciado em 7'
+FILA 2 atendimento do Sistema encerrado em 6'
+FILA 2 Proximo fregues em 3'
+FILA 2 Sistema livre em 7'
+FILA 2 Tamanho da fila 2 em 7'0
 -*-
-Evento 1 > Chegada de fregues aos 22'
-Evento 2 > atendimento da barbearia iniciado em 22'
-atendimento da barbearia encerrado em 11'
-Proximo fregues em 23'
-Barbearia ocupada em 22'
-Tamanho da fila em 22'0
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 10'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 10'1
+FILA 1 Proximo fregues em 6'
+FILA 1 Sistema ocupada em 10'
+FILA 1 Tamanho da fila 1 em 10'1
 -*-
-Evento 3 > atendimento da barbearia encerrado em 33'
-Barbearia livre em 33'
-Tamanho da fila em 33'0
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 10'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 10'1
+FILA 2 Proximo fregues em 1'
+FILA 2 Sistema ocupada em 10'
+FILA 2 Tamanho da fila 2 em 10'1
 -*-
-Evento 1 > Chegada de fregues aos 45'
-Evento 2 > atendimento da barbearia iniciado em 45'
-atendimento da barbearia encerrado em 19'
-Proximo fregues em 31'
-Barbearia ocupada em 45'
-Tamanho da fila em 45'0
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 11'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 11'2
+FILA 2 Proximo fregues em 7'
+FILA 2 Sistema ocupada em 11'
+FILA 2 Tamanho da fila 2 em 11'2
 -*-
-Evento 3 > atendimento da barbearia encerrado em 64'
-Barbearia livre em 64'
-Tamanho da fila em 64'0
+FILA 2 Evento 3 > atendimento do Sistema encerrado em 13'
+FILA 2 Sistema livre em 13'
+FILA 2 Tamanho da fila 2 em 13'2
 -*-
-Evento 1 > Chegada de fregues aos 76'
-Evento 2 > atendimento da barbearia iniciado em 76'
-atendimento da barbearia encerrado em 27'
-Proximo fregues em 7'
-Barbearia ocupada em 76'
-Tamanho da fila em 76'0
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 16'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 16'
+FILA 1 atendimento do Sistema encerrado em 9'
+FILA 1 Proximo fregues em 2'
+FILA 1 Sistema ocupada em 16'
+FILA 1 Tamanho da fila 1 em 16'1
 -*-
-Evento 1 > Chegada de fregues aos 83'
-Proximo fregues em 3'
-Barbearia ocupada em 83'
-Tamanho da fila em 83'1
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 18'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 18'2
+FILA 1 Proximo fregues em 5'
+FILA 1 Sistema ocupada em 18'
+FILA 1 Tamanho da fila 1 em 18'2
 -*-
-Evento 1 > Chegada de fregues aos 86'
-Proximo fregues em 15'
-Barbearia ocupada em 86'
-Tamanho da fila em 86'2
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 18'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 18'3
+FILA 2 Proximo fregues em 5'
+FILA 2 Sistema ocupada em 18'
+FILA 2 Tamanho da fila 2 em 18'3
 -*-
-Evento 1 > Chegada de fregues aos 101'
-Proximo fregues em 11'
-Barbearia ocupada em 101'
-Tamanho da fila em 101'3
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 23'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 23'3
+FILA 1 Proximo fregues em 8'
+FILA 1 Sistema ocupada em 23'
+FILA 1 Tamanho da fila 1 em 23'3
 -*-
-Evento 3 > atendimento da barbearia encerrado em 103'
-Evento 2 > atendimento da barbearia iniciado em 103'
-atendimento da barbearia  encerrado em 23'
-Barbearia ocupada em 103'
-Tamanho da fila em 103'2
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 23'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 23'4
+FILA 2 Proximo fregues em 1'
+FILA 2 Sistema ocupada em 23'
+FILA 2 Tamanho da fila 2 em 23'4
 -*-
-Evento 1 > Chegada de fregues aos 112'
-Proximo fregues em 19'
-Barbearia ocupada em 112'
-Tamanho da fila em 112'3
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 24'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 24'5
+FILA 2 Proximo fregues em 5'
+FILA 2 Sistema ocupada em 24'
+FILA 2 Tamanho da fila 2 em 24'5
 -*-
-Evento 3 > atendimento da barbearia encerrado em 126'
-Evento 2 > atendimento da barbearia iniciado em 126'
-atendimento da barbearia  encerrado em 31'
-Barbearia ocupada em 126'
-Tamanho da fila em 126'2
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 25'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 25'
+FILA 1 atendimento do Sistema  encerrado em 1'
+FILA 1 Sistema ocupada em 25'
+FILA 1 Tamanho da fila 1 em 25'2
 -*-
-Evento 1 > Chegada de fregues aos 131'
-Proximo fregues em 27'
-Barbearia ocupada em 131'
-Tamanho da fila em 131'3
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 26'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 26'
+FILA 1 atendimento do Sistema  encerrado em 7'
+FILA 1 Sistema ocupada em 26'
+FILA 1 Tamanho da fila 1 em 26'1
 -*-
-Evento 3 > atendimento da barbearia encerrado em 157'
-Evento 2 > atendimento da barbearia iniciado em 157'
-atendimento da barbearia  encerrado em 7'
-Barbearia ocupada em 157'
-Tamanho da fila em 157'2
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 29'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 29'6
+FILA 2 Proximo fregues em 1'
+FILA 2 Sistema ocupada em 29'
+FILA 2 Tamanho da fila 2 em 29'6
 -*-
-Evento 1 > Chegada de fregues aos 158'
-Proximo fregues em 3'
-Barbearia ocupada em 158'
-Tamanho da fila em 158'3
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 30'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 30'7
+FILA 2 Proximo fregues em 7'
+FILA 2 Sistema ocupada em 30'
+FILA 2 Tamanho da fila 2 em 30'7
 -*-
-Evento 1 > Chegada de fregues aos 161'
-Proximo fregues em 15'
-Barbearia ocupada em 161'
-Tamanho da fila em 161'4
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 31'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 31'2
+FILA 1 Proximo fregues em 2'
+FILA 1 Sistema ocupada em 31'
+FILA 1 Tamanho da fila 1 em 31'2
 -*-
-Evento 3 > atendimento da barbearia encerrado em 164'
-Evento 2 > atendimento da barbearia iniciado em 164'
-atendimento da barbearia  encerrado em 11'
-Barbearia ocupada em 164'
-Tamanho da fila em 164'3
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 33'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 33'3
+FILA 1 Proximo fregues em 9'
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 33'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 33'
+FILA 1 atendimento do Sistema  encerrado em 8'
+FILA 1 Sistema ocupada em 33'
+FILA 1 Tamanho da fila 1 em 33'2
 -*-
-Evento 3 > atendimento da barbearia encerrado em 175'
-Evento 2 > atendimento da barbearia iniciado em 175'
-atendimento da barbearia  encerrado em 23'
-Barbearia ocupada em 175'
-Tamanho da fila em 175'2
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 37'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 37'8
+FILA 2 Proximo fregues em 3'
+FILA 2 Sistema ocupada em 37'
+FILA 2 Tamanho da fila 2 em 37'8
 -*-
-Evento 1 > Chegada de fregues aos 176'
-Proximo fregues em 19'
-Barbearia ocupada em 176'
-Tamanho da fila em 176'3
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 40'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 40'9
+FILA 2 Proximo fregues em 1'
+FILA 2 Sistema ocupada em 40'
+FILA 2 Tamanho da fila 2 em 40'9
 -*-
-Evento 1 > Chegada de fregues aos 195'
-Proximo fregues em 31'
-Barbearia ocupada em 195'
-Tamanho da fila em 195'4
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 41'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 41'
+FILA 1 atendimento do Sistema  encerrado em 5'
+FILA 1 Sistema ocupada em 41'
+FILA 1 Tamanho da fila 1 em 41'1
 -*-
-Evento 3 > atendimento da barbearia encerrado em 198'
-Evento 2 > atendimento da barbearia iniciado em 198'
-atendimento da barbearia  encerrado em 27'
-Barbearia ocupada em 198'
-Tamanho da fila em 198'3
+FILA 2 Evento 1 > Chegada de fregues na Fila 2 aos 41'
+FILA 2 Evento 4 > esperando atendimento
+FILA 2 Tamanho da fila 2 em 41'10
+FILA 2 Proximo fregues em 0'
+FILA 2 Sistema ocupada em 41'
+FILA 2 Tamanho da fila 2 em 41'10
 -*-
-Evento 3 > atendimento da barbearia encerrado em 225'
-Evento 2 > atendimento da barbearia iniciado em 225'
-atendimento da barbearia  encerrado em 7'
-Barbearia ocupada em 225'
-Tamanho da fila em 225'2
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 42'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 42'2
+FILA 1 Proximo fregues em 7'
+FILA 1 Sistema ocupada em 42'
+FILA 1 Tamanho da fila 1 em 42'2
 -*-
-Evento 1 > Chegada de fregues aos 226'
-Proximo fregues em 3'
-Barbearia ocupada em 226'
-Tamanho da fila em 226'3
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 46'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 46'
+FILA 1 atendimento do Sistema  encerrado em 2'
+FILA 1 Sistema ocupada em 46'
+FILA 1 Tamanho da fila 1 em 46'1
 -*-
-Evento 1 > Chegada de fregues aos 229'
-Proximo fregues em 15'
-Barbearia ocupada em 229'
-Tamanho da fila em 229'4
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 48'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 48'
+FILA 1 atendimento do Sistema  encerrado em 9'
+FILA 1 Sistema ocupada em 48'
+FILA 1 Tamanho da fila 1 em 48'0
 -*-
-Evento 3 > atendimento da barbearia encerrado em 232'
-Evento 2 > atendimento da barbearia iniciado em 232'
-atendimento da barbearia  encerrado em 11'
-Barbearia ocupada em 232'
-Tamanho da fila em 232'3
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 49'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 49'1
+FILA 1 Proximo fregues em 8'
+FILA 1 Sistema ocupada em 49'
+FILA 1 Tamanho da fila 1 em 49'1
 -*-
-Evento 3 > atendimento da barbearia encerrado em 243'
-Evento 2 > atendimento da barbearia iniciado em 243'
-atendimento da barbearia  encerrado em 23'
-Barbearia ocupada em 243'
-Tamanho da fila em 243'2
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 57'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 57'2
+FILA 1 Proximo fregues em 5'
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 57'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 57'
+FILA 1 atendimento do Sistema  encerrado em 7'
+FILA 1 Sistema ocupada em 57'
+FILA 1 Tamanho da fila 1 em 57'1
 -*-
-Evento 1 > Chegada de fregues aos 244'
-Proximo fregues em 19'
-Barbearia ocupada em 244'
-Tamanho da fila em 244'3
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 62'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 62'2
+FILA 1 Proximo fregues em 2'
+FILA 1 Sistema ocupada em 62'
+FILA 1 Tamanho da fila 1 em 62'2
 -*-
-Evento 1 > Chegada de fregues aos 263'
-Proximo fregues em 31'
-Barbearia ocupada em 263'
-Tamanho da fila em 263'4
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 64'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 64'3
+FILA 1 Proximo fregues em 1'
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 64'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 64'
+FILA 1 atendimento do Sistema  encerrado em 8'
+FILA 1 Sistema ocupada em 64'
+FILA 1 Tamanho da fila 1 em 64'2
 -*-
-Evento 3 > atendimento da barbearia encerrado em 266'
-Evento 2 > atendimento da barbearia iniciado em 266'
-atendimento da barbearia  encerrado em 7'
-Barbearia ocupada em 266'
-Tamanho da fila em 266'3
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 65'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 65'3
+FILA 1 Proximo fregues em 7'
+FILA 1 Sistema ocupada em 65'
+FILA 1 Tamanho da fila 1 em 65'3
 -*-
-Evento 3 > atendimento da barbearia encerrado em 273'
-Evento 2 > atendimento da barbearia iniciado em 273'
-atendimento da barbearia  encerrado em 9'
-Barbearia ocupada em 273'
-Tamanho da fila em 273'2
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 72'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 72'4
+FILA 1 Proximo fregues em 2'
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 72'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 72'
+FILA 1 atendimento do Sistema  encerrado em 1'
+FILA 1 Sistema ocupada em 72'
+FILA 1 Tamanho da fila 1 em 72'3
 -*-
-Evento 3 > atendimento da barbearia encerrado em 282'
-Evento 2 > atendimento da barbearia iniciado em 282'
-atendimento da barbearia  encerrado em 21'
-Barbearia ocupada em 282'
-Tamanho da fila em 282'1
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 73'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 73'
+FILA 1 atendimento do Sistema  encerrado em 8'
+FILA 1 Sistema ocupada em 73'
+FILA 1 Tamanho da fila 1 em 73'2
 -*-
-Evento 1 > Chegada de fregues aos 294'
-Proximo fregues em 27'
-Barbearia ocupada em 294'
-Tamanho da fila em 294'2
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 74'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 74'3
+FILA 1 Proximo fregues em 7'
+FILA 1 Sistema ocupada em 74'
+FILA 1 Tamanho da fila 1 em 74'3
+-*-
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 81'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 81'4
+FILA 1 Proximo fregues em 2'
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 81'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 81'
+FILA 1 atendimento do Sistema  encerrado em 1'
+FILA 1 Sistema ocupada em 81'
+FILA 1 Tamanho da fila 1 em 81'3
+-*-
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 82'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 82'
+FILA 1 atendimento do Sistema  encerrado em 7'
+FILA 1 Sistema ocupada em 82'
+FILA 1 Tamanho da fila 1 em 82'2
+-*-
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 83'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 83'3
+FILA 1 Proximo fregues em 6'
+FILA 1 Sistema ocupada em 83'
+FILA 1 Tamanho da fila 1 em 83'3
+-*-
+FILA 1 Evento 1 > Chegada de fregues na Fila 1 aos 89'
+FILA 1 Evento 4 > esperando atendimento
+FILA 1 Tamanho da fila 1 em 89'4
+FILA 1 Proximo fregues em 0'
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 89'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 89'
+FILA 1 atendimento do Sistema  encerrado em 3'
+FILA 1 Sistema ocupada em 89'
+FILA 1 Tamanho da fila 1 em 89'3
+-*-
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 92'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 92'
+FILA 1 atendimento do Sistema  encerrado em 8'
+FILA 1 Sistema ocupada em 92'
+FILA 1 Tamanho da fila 1 em 92'2
+-*-
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 100'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 100'
+FILA 1 atendimento do Sistema  encerrado em 12'
+FILA 1 Sistema ocupada em 100'
+FILA 1 Tamanho da fila 1 em 100'1
+-*-
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 112'
+FILA 1 Evento 2 > atendimento do Sistema iniciado em 112'
+FILA 1 atendimento do Sistema  encerrado em 10'
+FILA 1 Sistema ocupada em 112'
+FILA 1 Tamanho da fila 1 em 112'0
+-*-
+FILA 1 Evento 3 > atendimento do Sistema encerrado em 122'
+FILA 1 Sistema livre em 122'
+FILA 1 Tamanho da fila 1 em 122'0
 -*-
